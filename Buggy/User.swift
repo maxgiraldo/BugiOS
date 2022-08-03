@@ -10,12 +10,20 @@ import Foundation
 class User {
     let name: String
     var friends = [User]()
+    var bestFriend: User!
 
     init(_ name: String) {
         self.name = name
     }
 
-    func addFriend(friend: User) {
+    deinit {
+        print("Deinit \(name)")
+    }
+
+    func addFriend(friend: User, makeBestFriend: Bool) {
+        if makeBestFriend {
+            bestFriend = friend
+        }
         friends.append(friend)
     }
 }

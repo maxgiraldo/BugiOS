@@ -16,21 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Q2-6q-Uzd">
-                                <rect key="frame" x="144.5" y="292" width="125" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Q2-6q-Uzd">
+                                <rect key="frame" x="144.5" y="314.5" width="125" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Generate Users"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5kP-u5-fcp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbZ-kd-odP">
-                                <rect key="frame" x="153" y="363" width="107" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbZ-kd-odP">
+                                <rect key="frame" x="153.5" y="432.5" width="107" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Delete Users"/>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="21W-3y-3bM"/>
+                                    <action selector="deleteUsers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JQE-Ck-lTh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -38,6 +37,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="2Q2-6q-Uzd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G3f-do-1gF"/>
+                            <constraint firstItem="2Q2-6q-Uzd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cQG-zy-ssA"/>
+                            <constraint firstItem="2Q2-6q-Uzd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-118" id="h4y-bY-aNh"/>
+                            <constraint firstItem="QbZ-kd-odP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jqt-QF-3be"/>
+                            <constraint firstItem="QbZ-kd-odP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vx6-3f-euA"/>
                         </constraints>
                     </view>
                 </viewController>
