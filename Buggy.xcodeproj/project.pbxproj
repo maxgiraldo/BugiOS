@@ -13,6 +13,7 @@
 		50D06AA22868BE0B00F3B76F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50D06AA02868BE0B00F3B76F /* Main.storyboard */; };
 		50D06AA42868BE0D00F3B76F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50D06AA32868BE0D00F3B76F /* Assets.xcassets */; };
 		50D06AA72868BE0D00F3B76F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50D06AA52868BE0D00F3B76F /* LaunchScreen.storyboard */; };
+		50D4AA97289ACBFB0026820C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4AA96289ACBFB0026820C /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		50D06AA32868BE0D00F3B76F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50D06AA62868BE0D00F3B76F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50D06AA82868BE0D00F3B76F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50D4AA96289ACBFB0026820C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				50D06AA32868BE0D00F3B76F /* Assets.xcassets */,
 				50D06AA52868BE0D00F3B76F /* LaunchScreen.storyboard */,
 				50D06AA82868BE0D00F3B76F /* Info.plist */,
+				50D4AA96289ACBFB0026820C /* User.swift */,
 			);
 			path = Buggy;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50D4AA97289ACBFB0026820C /* User.swift in Sources */,
 				50D06A9F2868BE0B00F3B76F /* ViewController.swift in Sources */,
 				50D06A9B2868BE0B00F3B76F /* AppDelegate.swift in Sources */,
 				50D06A9D2868BE0B00F3B76F /* SceneDelegate.swift in Sources */,

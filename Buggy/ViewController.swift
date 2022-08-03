@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var userIds: NSMutableArray?
+    var users: NSMutableArray?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,31 +19,39 @@ class ViewController: UIViewController {
     @IBAction func buttonTapped(_ sender: UIButton) {
         print("Method: \(#function) in file: \(#file) line: \(#line) called.")
 
-        let ids = generateUserIds()
+        let newUsers = generateUsers()
 
-        for userId in ids {
-            print("User ID: \(userId)")
+        var u: User
+        for user in newUsers {
+            u = user as! User
+            print("User: \(u.name)")
         }
 
-        userIds = ids
+        users = newUsers
     }
 
     @IBAction func deleteUsers(_ sender: UIButton) {
-        deleteUsers(ids: userIds!)
+        print("Method: \(#function) in file: \(#file) line: \(#line) called.")
+
+        deleteUsers(users: users!)
     }
 
-    func generateUserIds() -> NSMutableArray {
+    func generateUsers() -> NSMutableArray {
         let array = NSMutableArray()
+        var previousUser: User = User("default")
         for i in 0..<10 {
-            array.insert(i+1, at: i)
+            let user = User("Person \(i)")
+            user.addFriend(friend: previousUser)
+            previousUser = user
+            array.insert(user, at: i)
         }
 
         return array
     }
 
-    func deleteUsers(ids: NSMutableArray) {
+    func deleteUsers(users: NSMutableArray) {
         for _ in 0...10 {
-            ids.removeObject(at: 0)
+            users.removeObject(at: 0)
         }
     }
 }
